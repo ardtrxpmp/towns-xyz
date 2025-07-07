@@ -1,0 +1,31 @@
+settings:
+  gpt:
+    api_key: "gpt api key"
+
+  randomize:
+    shuffle_keys: true
+    delay_between_actions:
+      - 5
+      - 10
+    delay_between_accounts:
+      - 30
+      - 60
+    delay_on_ratelimit:
+      - 45
+      - 60
+
+  general:
+    max_retries: 3
+
+  transactions:
+    gas_limit_multiplier: 1.05
+    gas_price_multiplier: 1.05
+    gas_amt_multiplier: 1.05
+    max_dst_wait_time: 1800
+    acceptable_l1_gwei: 15
+
+  towns:
+    internal_wallet_funding_range:
+      - 0.0032
+      - 0.0034
+    town_invite_list: ["https://app.towns.com/t/0xd3dd2d733e5ef411e7403425cdd4c86953ecab6f/", "https://app.towns.com/t/0x48769138cf537a2505318e2360acc20d0c896144/", "https://app.towns.com/t/0x920e29ce69db95d34188b1545d71ef80a1e105b7/"]
